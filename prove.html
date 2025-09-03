@@ -4,36 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página de Datos Curiosos</title>
-    <style>
-        body {
-        font-family: Arial, sans-serif;
-        margin: 20px;
-        background-color: #f0f8ff;
-        color: #333;
-        }
-        h1 {
-        color: #007acc;
-        text-align: center;
-        }
-        p {
-        font-size: 1.2em;
-        color:#333;
-        text-align: center;
-        }
-
-        button {
-        display: flex;
-        margin: 20px auto;
-        padding: 10px 20px;
-        font-size: 1em;
-        background-color: #007acc;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        align-items: center;
-        }
-    </style>
+  <link rel="stylesheet" href="styles.css"> <!-- Enlaza tu archivo CSS aquí (ojo Jully, lo quitas y se ve mal) -->
 </head>
 <body>
   <h1>🤔 Dato Curioso</h1>
@@ -43,26 +14,8 @@
   <p id="dato">*Aquí aparecerá un dato curioso*</p>
     <button onclick="mostrarDatoCurioso()">Mostrar Dato Curioso</button>
 
-    
+  <p id="contador"></p>
+  
+  <script src="Back.js"></script> <!-- Aquí enlazas el JavaScript -->
 </body>
 </html>
-<script>
-  const datosCuriosos = [
-    "El corazón de una ballena azul es tan grande que un humano podría nadar a través de sus arterias.",
-    "Las abejas pueden reconocer rostros humanos.",
-    "El agua caliente se congela más rápido que el agua fría, un fenómeno conocido como el efecto Mpemba.",
-    "Los pulpos tienen tres corazones y su sangre es de color azul.",
-    "El récord mundial de la mayor cantidad de hot dogs comidos en 10 minutos es de 76.",
-    "Los flamencos no nacen con plumas rosas; su color proviene de los carotenoides en su dieta.",
-    "El Monte Everest crece aproximadamente 4 milímetros cada año debido a la actividad tectónica.",
-    "Los gatos tienen un hueso extra en sus patas delanteras que les permite girar sus garras hacia adentro.",
-    "El ADN humano es un 98% similar al del chimpancé.",
-    "Las jirafas tienen lenguas de hasta 45 centímetros de largo para alcanzar las hojas altas."
-  ];
-
-  function mostrarDatoCurioso() {
-    const indiceAleatorio = Math.floor(Math.random() * datosCuriosos.length);
-    document.getElementById('dato').innerText = datosCuriosos[indiceAleatorio];
-  }
-
-  window.onload = mostrarDatoCurioso;
