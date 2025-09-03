@@ -1,0 +1,24 @@
+{
+  "name": "ecdif",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Back.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosVil7/ECDIF.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JosVil7/ECDIF/issues"
+  },
+  "homepage": "https://github.com/JosVil7/ECDIF#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
