@@ -6,7 +6,12 @@ const app = express();
 const PORT = 3000;
 
 app.use(express.json());
-app.use(express.static(__dirname)); 
+app.use(express.static(__dirname));
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "prove.html"));
+});
+
 
 const datosFile = path.join(__dirname, "datos.json");
 
