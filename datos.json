@@ -34,5 +34,13 @@
   {
     "tipo": "visita",
     "fecha": "2025-09-14"
+  },
+  {
+    "tipo": "visita",
+    "fecha": "2025-09-15"
+  },
+  {
+    "tipo": "click",
+    "fecha": "2025-09-15"
   }
 ]
